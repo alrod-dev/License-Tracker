@@ -1,0 +1,199 @@
+<!--Author: Team 5-->
+<!--File: Sign up - signup.html-->
+<!--Date: 7/31/2017-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>License Tracker | Sign Up</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="ink, cookbook, recipes">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- inks css file -->
+    <link rel="stylesheet" type="text/css" href="http://fastly.ink.sapo.pt/3.1.10/css/ink.css">
+
+    <!--Icon-->
+    <link rel="icon" href="assets/images/licenseIcon.png">
+
+    <!-- load Ink's css from the cdn -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.1.10/css/ink-flex.min.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/3.1.10/css/font-awesome.min.css">
+
+    <!-- load Ink's css for IE8 -->
+    <!--[if lt IE 9 ]>
+    <link rel="stylesheet" href="http://cdn.ink.sapo.pt/3.1.10/css/ink-ie.min.css" type="text/css" media="screen"
+          title="no title" charset="utf-8">
+    <![endif]-->
+
+    <!--Local CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/signup.css">
+
+
+</head>
+
+
+<body>
+
+<!--Bootstrap grid system in the outside using the ink grid system in the inside-->
+
+<div class="container-fluid">
+
+    <h1>License Tracker
+        <small>Ninja Turtles LLC</small>
+    </h1>
+
+    <header role="banner" class="navbar navbar-inverse">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button data-toggle="collapse-side" data-target=".side-collapse"
+                        data-target-2=".side-collapse-container" type="button" class="navbar-toggle pull-left"><span
+                        class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+
+            <div class="navbar-inverse side-collapse in">
+                <nav role="navigation" class="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="home.html">Home</a></li>
+                        <li><a href="index.html">Log In</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+
+        </div><!-- /.container -->
+
+
+    </header>
+
+    <!---Form-->
+
+
+    <!-- Sign-up Form (note the various input "types")-->
+
+    <!--Input Boxes-->
+    <!--Name: First Name; id: firstName -->
+    <!--Name: Last Name; id: lastName-->
+    <!--Name: Email; id: email-->
+    <!--Name: Password; id: password-->
+    <!--Name: Day; id: day-->
+    <!--Name: Month; id: month-->
+    <!--Name: Year; id: year-->
+
+    <!--Radio Buttons-->
+    <!--Name: Gender Male; id: gender-male-->
+    <!--Name: Gender Female; id: gender-female-->
+    <!--Name: Checkbox; id: checkbox-->
+
+    <div class="container">
+
+        <form id="signUpBox">
+            <div class="row">
+                <h4>Account</h4>
+
+                <div class="col-half">
+                    <div class="input-group input-group-icon">
+                        <input id="firstName" type="text" placeholder="First Name"/>
+                        <div class="input-icon"><i class="fa fa-user"></i></div>
+                    </div>
+
+                    <div class="input-group input-group-icon">
+                        <input id="email" type="email" placeholder="Email Address"/>
+                        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+                    </div>
+                </div>
+
+                <div class="input-group input-group-icon">
+                    <input id="lastName" type="text" placeholder="Last Name"/>
+                    <div class="input-icon"><i class="fa fa-user"></i></div>
+                </div>
+
+
+                <div class="input-group input-group-icon">
+                    <input id="password" type="password" placeholder="Password"/>
+                    <div class="input-icon"><i class="fa fa-key"></i></div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-half">
+                    <h4>Date of Birth</h4>
+                    <div class="input-group">
+                        <div class="col-third">
+                            <input id="day" type="text" placeholder="DD"/>
+                        </div>
+                        <div class="col-third">
+                            <input id="month" type="text" placeholder="MM"/>
+                        </div>
+                        <div class="col-third">
+                            <input id="year" type="text" placeholder="YYYY"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-half">
+                    <h4>Gender</h4>
+                    <div class="input-group">
+                        <input type="radio" name="gender" value="male" id="gender-male"/>
+                        <label for="gender-male">Male</label>
+                        <input type="radio" name="gender" value="female" id="gender-female"/>
+                        <label for="gender-female">Female</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <h4>Terms and Conditions</h4>
+                <div class="input-group">
+                    <input type="checkbox" id="terms"/>
+                    <label for="terms">I accept the terms and conditions for signing up to this service, and hereby
+                        confirm
+                        I have read the privacy policy.</label>
+                </div>
+
+                <button class="offset">Register</button>
+
+            </div>
+        </form>
+    </div>
+
+
+</div>
+
+
+<!--Footer Layout-->
+
+
+<!--Using the ink grid system-->
+
+<div class="ink-grid">
+
+    <footer class="clearfix">
+        <div class="ink-grid">
+            <p class="note">Copyright © Team Ninja Turtles</p>
+        </div>
+    </footer>
+
+</div>
+
+
+</body>
+</html>
